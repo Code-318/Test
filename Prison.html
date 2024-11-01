@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prison Page</title>
+<style>
+  /* Basic Reset */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    color: #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: radial-gradient(#555 1px, transparent 1px),
+                      radial-gradient(#555 1px, transparent 1px);
+    background-position: 0 0, 25px 25px;
+    background-size: 50px 50px;
+  }
+
+  /* Header resembling prison bars */
+  .header {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    background-color: #222;
+    border-bottom: 5px solid #444;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #e0e0e0;
+    text-transform: uppercase;
+  }
+
+  /* Bar effect */
+  .bars {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+  }
+
+  .bars div {
+    height: 80px;
+    width: 5px;
+    background-color: #666;
+  }
+
+  /* Main content with cell style */
+  .main-content {
+    width: 80%;
+    max-width: 700px;
+    background-color: #222;
+    padding: 20px;
+    margin-top: 20px;
+    border: 5px solid #444;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+  }
+
+  .main-content h2 {
+    font-size: 22px;
+    color: #bbb;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #555;
+    padding-bottom: 10px;
+  }
+
+  .cell-button {
+    background-color: #444;
+    color: #e0e0e0;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: inset 0 0 5px #111;
+    text-transform: uppercase;
+  }
+
+  .cell-button:hover {
+    background-color: #555;
+  }
+
+  .cell-row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .cell-button:active {
+    box-shadow: inset 0 0 5px #000;
+  }
+
+  /* Footer with small barred window */
+  .footer {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #222;
+    color: #888;
+    font-size: 14px;
+    text-align: center;
+    border-top: 5px solid #444;
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  Prison Compound
+  <div class="bars">
+    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+  </div>
+</div>
+
+<div class="main-content">
+  <h2>Cell Block A</h2>
+  <p>Welcome to the cell block. Each cell holds a story. (nothing here works)</p>
+  
+  <div class="cell-row">
+    <button class="cell-button">Cell 1</button>
+    <button class="cell-button">Cell 2</button>
+    <button class="cell-button">Cell 3</button>
+    <button class="cell-button">Cell 4</button>
+  </div>
+</div>
+
+<div class="footer">
+  © 2023 Code-318
+</div>
+
+</body>
+</html>
